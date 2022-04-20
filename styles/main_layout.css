@@ -1,0 +1,94 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .grid-container-main {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-auto-rows: minmax(0, auto);
+        grid-template-areas: 
+        'ttl ttl ttl'
+        'cmp cmp cmp'
+        '.   cl1 .  '
+        '.   cl2 .  '
+        '.   cl3 .  '
+        '.   cl4 .  ';
+        column-gap: 5px;
+        row-gap: 25px;
+        background-color: black;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    h1 {
+        font-size: 72px;
+    }
+    h3 {
+        font-size: x-large;
+    } 
+    .subtitle {
+        padding-bottom: 25px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .grid-container-main {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-auto-rows: minmax(0, auto);
+        grid-template-areas: 
+        'ttl ttl'
+        'cmp cmp'
+        'cl1 cl2'
+        'cl3 cl4';
+        column-gap: 10%;
+        row-gap: 25px;
+        background-color: black;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    h1 {
+        font-size: 96px;
+    }
+    h3 {
+        font-size: xx-large;
+    } 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .grid-container-main {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-auto-rows: minmax(0, auto);
+        grid-template-areas: 
+        'ttl ttl ttl ttl'
+        'cmp cmp cmp cmp'
+        'cl1 cl2 cl3 cl4'
+        'mn1 mn1 mn1 mn1';
+        column-gap: 10%;
+        row-gap: 5px;
+        background-color: black;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .subtitle {
+        padding-bottom: 100px;
+    }
+    h3 {
+        font-size: x-large;
+    } 
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    h3 {
+        font-size: x-large;
+    } 
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   h3 {
+       font-size: xx-large;
+   } 
+}
