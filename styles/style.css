@@ -116,7 +116,7 @@ a:link, a:visited, a:hover, a:active {
     aspect-ratio: 1/1;
     border-radius: 50%;
 
-    background-color: #91643e;
+    background-color: #c53123; /* #91643e; */
 }
 
 /* OTHER PAGES */
@@ -160,7 +160,7 @@ a:link, a:visited, a:hover, a:active {
     margin-bottom: 20px;
     shape-outside: circle();
     clip-path: circle(360px at 50% 375px);
-    background: #91643e;
+    background: #c53123;
 }
 
 .bottom {
@@ -173,9 +173,11 @@ a:link, a:visited, a:hover, a:active {
 /* NAVIGATION ELEMENTS */
 .menu{
     grid-area: mnu;
-    display:block;
+    display:fex;
     align-items: center;
     justify-content: center;
+    /* border: solid 1px white; */
+    margin: 0;
 }
 
 .menu h3 {
@@ -183,9 +185,11 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .navl1 {
+    grid-area: mn1;
     display:flex;
     align-items: center;
     justify-content: center;
+    /* border: solid 1px white; */
 }
 
 .navl1 a:link, .navl1 a:visited, .navl1 a:hover, .navl1 a:active {
@@ -194,6 +198,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .navl2 {
+    grid-area: mn2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -205,6 +210,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .navl3 {
+    grid-area: mn3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -215,13 +221,20 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .navl4 {
+    grid-area: mn4;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .navl4 a:link, .navl4 a:visited, .navl4 a:hover, .navl4 a:active {
-    color:#91643e;
+    color:#c53123;
+}
+
+nav h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
 }
 
 /* MAIN CONTENT ELEMENTS */
@@ -267,10 +280,10 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .card img {
-    width: 75%;
+    width: 100%;
     /* max-width: 512px; */
     display: block;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .card_title {
@@ -282,15 +295,30 @@ a:link, a:visited, a:hover, a:active {
     transition: .5s ease;
     opacity:0;
     color: white;
-    font-size: 32px;
-    padding: 20px;
+    padding: 20px 0 20px 0;
     text-align: center;
     margin-bottom: 10px;
 }
 
 .card:hover .card_title {
     opacity: 1;
-  }
+}
+
+.col1 {
+    grid-area: pt1;
+}
+
+.col2 {
+    grid-area: pt2;
+}
+
+.col3 {
+    grid-area: pt3;
+}
+
+.col4 {
+    grid-area: pt4;
+}
 
 /* MAIN CONTENT ELEMENTS - TECH STACK PAGE */
 .stack {
@@ -318,6 +346,7 @@ a:link, a:visited, a:hover, a:active {
     padding-right: 8%;
     align-items: center;
     justify-content: center;
+    padding-top: 25px;
  }
 
 .contact p, .contact h3 {
@@ -325,5 +354,5 @@ a:link, a:visited, a:hover, a:active {
  }
 
  .contact a:link, .contact a:visited, .contact a:hover, .contact a:active {
-    color: #6c9591;
+    color: #c53123;
 }
