@@ -108,7 +108,9 @@
         grid-template-areas: 
         'hdr hdr hdr'
         /* 'mnu mnu mnu' */
-        'mnu con .  ';
+        'mnu con des'
+        '.   pt2 ds2'
+        '.   pt3 ds3';
         column-gap: 5px;
         row-gap: 25px;
         background-color: black;

@@ -116,7 +116,7 @@ a:link, a:visited, a:hover, a:active {
     aspect-ratio: 1/1;
     border-radius: 50%;
 
-    background-color: #91643e;
+    background-color: #c53123;
 }
 
 /* OTHER PAGES */
@@ -160,7 +160,7 @@ a:link, a:visited, a:hover, a:active {
     margin-bottom: 20px;
     shape-outside: circle();
     clip-path: circle(360px at 50% 375px);
-    background: #91643e;
+    background: #c53123;
 }
 
 .bottom {
@@ -221,7 +221,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .navl4 a:link, .navl4 a:visited, .navl4 a:hover, .navl4 a:active {
-    color:#91643e;
+    color:#c53123;
 }
 
 /* MAIN CONTENT ELEMENTS */
@@ -252,17 +252,34 @@ a:link, a:visited, a:hover, a:active {
 }
 
 /* MAIN CONTENT ELEMENTS - PORTFOLIO PAGE */
-.port {
+#port {
     grid-area: con;
-    /* display: block;
-    align-items: center;
-    justify-content: center; */
-    /* border: solid 1px white; */
+    height: 100%;
+}
+#dsc1 {
+    grid-area: des;
+    height: 100%;
+}
+#prt2 {
+    grid-area: pt2;
+    height: 100%;
+}
+#dsc2 {
+    grid-area: ds2;
+    height: 100%;
+}
+#prt3 {
+    grid-area: pt3;
+    height: 100%;
+}
+#dsc3 {
+    grid-area: ds3;
+    height: 100%;
 }
 
 .card {
     position: relative;
-    margin: 20px;
+    /* margin: 20px; */
     /* text-align: center; */
 }
 
@@ -273,7 +290,29 @@ a:link, a:visited, a:hover, a:active {
     margin: auto;
 }
 
+.card-desc h2 {
+    font-size: xx-large;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card-desc h3 {
+    font-size: large;
+}
+
+.card-desc li {
+    list-style-type: square;
+}
+
+.code-link, .card-desc h2, .card-desc h3{
+    text-align: center;
+}
+
+.code-link a:link, .code-link a:visited, .code-link a:hover, .code-link a:active {
+    color: #6c9591;
+}
+
 .card_title {
+    font-family: 'Raleway', sans-serif;
     position: absolute; 
     bottom: 0; 
     background: rgb(0, 0, 0);
@@ -325,5 +364,5 @@ a:link, a:visited, a:hover, a:active {
  }
 
  .contact a:link, .contact a:visited, .contact a:hover, .contact a:active {
-    color: #6c9591;
+    color: #c53123;
 }
