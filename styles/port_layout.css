@@ -1,13 +1,20 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .grid-container {
+    .grid-container-port {
         display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-columns: 1fr;
         grid-auto-rows: minmax(0, auto);
         grid-template-areas: 
-        'hdr hdr hdr'
-        'mnu mnu mnu'
-        'con con con';
+        'hdr'
+        'mnu'
+        'con'
+        'des'
+        'pt2'
+        'ds2'
+        'pt3'
+        'ds3'
+        'pt4'
+        'ds4';
         column-gap: 5px;
         row-gap: 25px;
         background-color: black;
@@ -35,14 +42,21 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .grid-container {
+    .grid-container-port {
         display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-columns: 1fr;
         grid-auto-rows: minmax(0, auto);
         grid-template-areas: 
-        'hdr hdr hdr'
-        'mnu mnu mnu'
-        'con con con';
+        'hdr'
+        'mnu'
+        'con'
+        'des'
+        'pt2'
+        'ds2'
+        'pt3'
+        'ds3'
+        'pt4'
+        'ds4';
         column-gap: 5px;
         row-gap: 25px;
         background-color: black;
@@ -70,14 +84,17 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .grid-container {
+    .grid-container-port {
         display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-auto-rows: minmax(0, auto);
         grid-template-areas: 
-        'hdr hdr hdr'
-        'mnu mnu mnu'
-        'con con con';
+        'hdr hdr'
+        'mnu mnu'
+        'con des'
+        'pt2 ds2'
+        'pt3 ds3'
+        'pt4 ds4';
         column-gap: 5px;
         row-gap: 25px;
         background-color: black;
@@ -88,26 +105,18 @@
     h1 {
         font-size: 96px;
     }
-
-    /* h3 {
-        font-size: x-large;
-        margin-top: 2px;
-        margin-bottom: 2px;
-    }  */
-
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .grid-container {
+    .grid-container-port {
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;
         grid-auto-rows: minmax(0, auto);
         grid-template-areas: 
         'hdr hdr hdr'
-        /* 'mnu mnu mnu' */
         'mnu con des'
         '.   pt2 ds2'
         '.   pt3 ds3'
